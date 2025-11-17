@@ -16,7 +16,7 @@ Let's face it - even the beastliest cracking rig spends a lot of time at idle. Y
 
 Paste a one-liner into AWS CloudShell. Pretty easy.
 
-```source <(curl https://npkproject.io/cloudshell_install.sh)```
+```source <(curl https://code.fiendishdrwu.com/npk/cloudshell_install.sh)```
 
 If you'd like to use the `dev` branch to use beta features, use this one-liner instead:
 
@@ -62,7 +62,7 @@ Configure how long data will stay in NPK with configurable lifecycle durations d
 2. Click the AWS CloudShell button in the top right corner.
 ![cloudshell_icon](https://user-images.githubusercontent.com/143415/156901055-5107d4b2-c5b4-4ca5-8454-57e7504e2316.png)
 
-3. Paste in the one-liner: `source <(curl https://npkproject.io/cloudshell_install.sh)`
+3. Paste in the one-liner: `source <(curl https://code.fiendishdrwu.com/npk/cloudshell_install.sh)`
 4. Use the wizard to complete the configuration
 
 When the deploy finishes, you'll be dropped to a custom prompt, which indicates that NPK is deployed and CloudShell is connected to it.
@@ -79,7 +79,7 @@ See https://github.com/c6fc/npk/wiki/Detailed-NPK-Settings for more details abou
 
 To connect to an existing NPK installation (which is needed to modify or uninstall NPK), log into the AWS account where NPK resides, click the CloudShell icon, and paste in the one-liner:
 
-```source <(curl https://npkproject.io/cloudshell_install.sh)```
+```source <(curl https://code.fiendishdrwu.com/npk/cloudshell_install.sh)```
 
 CloudShell will now connect to NPK (which may take a minute or two), after which you'll drop to a new prompt that looks like this:
 
@@ -92,7 +92,7 @@ You're now connected to your NPK installation. This can be performed by any user
 You can change the settings of an install without losing your existing campaigns. Use the instructions above to connect to your NPK installation, then edit `npk-settings.json` as necessary and run `npm run update`. It's that easy!
 
 ```sh
-cloudshell-user$ source <(curl https://npkproject.io/cloudshell_install.sh)
+cloudshell-user$ source <(curl https://code.fiendishdrwu.com/npk/cloudshell_install.sh)
 @c6fc/npk> vim npk-settings.json
 < ... change your settings however you need >
 @c6fc/npk> npm run update
@@ -109,7 +109,7 @@ Once NPK has been deployed, administrative users can use the NPK console to uplo
 You can completely turn down NPK and delete all of its data from AWS very easily. Just attach your CloudShell to NPK, then run `npm run destroy`:
 
 ```sh
-cloudshell-user$ source <(curl https://npkproject.io/cloudshell_install.sh)
+cloudshell-user$ source <(curl https://code.fiendishdrwu.com/npk/cloudshell_install.sh)
 @c6fc/npk> npm run destroy
 ```
 
