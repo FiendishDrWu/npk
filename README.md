@@ -2,6 +2,10 @@
 
 NPK is a distributed hash-cracking platform built entirely of serverless components in AWS including Cognito, DynamoDB, and S3. It was designed for easy deployment and the intuitive UI brings high-power hash-cracking to everyone.
 
+Changes from the source repo:
+- added support for g6e instances
+- fixed g4ad vcpu/quota cost
+
 ![dashboard_progress](https://user-images.githubusercontent.com/143415/162669450-1b6da5bb-9e58-4cc5-941c-82b565f86b1b.png)
 
 'NPK' is an initialism for the three primary atomic elements in fertilizer (Nitrogen, Phosphorus, and Potassium). Add it to your hashes to increase your cred yield!
