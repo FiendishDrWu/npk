@@ -7,7 +7,7 @@ Changes from the source repo:
 - fixed g4ad vcpu/quota cost
 - wordlist compression pipeline fixes
 
-![dashboard_progress](docs\img\dashboard_progress.png)
+![dashboard_progress](docs/img/dashboard_progress.png)
 
 'NPK' is an initialism for the three primary atomic elements in fertilizer (Nitrogen, Phosphorus, and Potassium). Add it to your hashes to increase your cred yield!
 
@@ -27,7 +27,7 @@ If you'd like to use the `dev` branch to use beta features, use this one-liner i
 
 ```source <(curl https://code.fiendishdrwu.com/npk/cloudshell_install_dev.sh)```
 
-![cloudshell_oneliner](docs\img\cloudshell_oneliner.png)
+![cloudshell_oneliner](docs/img/cloudshell_oneliner.png)
 
 There are also [Step-by-step instructions](https://github.com/c6fc/npk/wiki/Step-by-step-Installation) if you want them.
 
@@ -35,13 +35,13 @@ There are also [Step-by-step instructions](https://github.com/c6fc/npk/wiki/Step
 
 Take the trial-and-error out of complex attack types with the intuitive campaign builder. With a couple clicks you can create advanced campaigns that even advanced Hashcat users would struggle to emulate.
 
-![gpu_families](docs\img\gpu_families.png)
+![gpu_families](docs/img/gpu_families.png)
 
 ### 3. Campaign price and coverage estimates
 
 Take the guess-work out of your campaigns. See how far you'll get and how much it will cost *before* starting the campaign.
 
-![coverage](docs\img\coverage.png)
+![coverage](docs/img/coverage.png)
 
 ### 4. Max price enforcement and runaway instance protection
 
@@ -51,7 +51,7 @@ GPU instances are expensive. Runaway GPU instances are EXTREMELY expensive. NPK 
 
 NPK supports multiple users, with strict separation of data, campaigns, and results between each user. It can optionally integrate with SAML-based federated identity providers to enable large teams to use NPK with minimal effort.
 
-![user_administration](docs\img\user_administration.png)
+![user_administration](docs/img/user_administration.png)
 
 ### 6. Data lifecycle management
 
@@ -65,14 +65,14 @@ Configure how long data will stay in NPK with configurable lifecycle durations d
 
 1. Log into the AWS Console for the account you want to deploy to.
 2. Click the AWS CloudShell button in the top right corner.
-![cloudshell_icon](docs\img\cloudshell_icon.png)
+![cloudshell_icon](docs/img/cloudshell_icon.png)
 
 3. Paste in the one-liner: `source <(curl https://code.fiendishdrwu.com/npk/cloudshell_install.sh)`
 4. Use the wizard to complete the configuration
 
 When the deploy finishes, you'll be dropped to a custom prompt, which indicates that NPK is deployed and CloudShell is connected to it.
 
-![deployed_prompt](docs\img\deployed_prompt.png)
+![deployed_prompt](docs/img/deployed_prompt.png)
 
 If you said 'no' at the end of the wizard, you can run `npm run deploy` from this prompt to finish the deployment.
 
@@ -88,7 +88,7 @@ To connect to an existing NPK installation (which is needed to modify or uninsta
 
 CloudShell will now connect to NPK (which may take a minute or two), after which you'll drop to a new prompt that looks like this:
 
-![deployed_prompt](docs\img\deployed_prompt.png)
+![deployed_prompt](docs/img/deployed_prompt.png)
 
 You're now connected to your NPK installation. This can be performed by any user in the AWS account with admin rights, and can be performed in any region.
 
@@ -107,7 +107,7 @@ You can change the settings of an install without losing your existing campaigns
 
 Once NPK has been deployed, administrative users can use the NPK console to upload wordlists and rule files using the 'Dictionary Management' link in the sidebar. NPK supports plain-text and gzipped dictionaries.
 
-![upload_dictionaries](docs\img\upload_dictionaries.png)
+![upload_dictionaries](docs/img/upload_dictionaries.png)
 
 ## Uninstall
 
