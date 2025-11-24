@@ -6,6 +6,8 @@ Changes from the source repo:
 - added support for g6e instances
 - fixed g4ad vcpu/quota cost
 - wordlist compression pipeline fixes
+- added A100 benchmarks
+- moved images to docs/img directory
 
 ![dashboard_progress](docs/img/dashboard_progress.png)
 
