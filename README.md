@@ -5,6 +5,7 @@ NPK is a distributed hash-cracking platform built entirely of serverless compone
 Changes from the source repo:
 - added support for g6e instances
 - fixed g4ad vcpu/quota cost
+- wordlist compression pipeline fixes
 
 ![dashboard_progress](https://user-images.githubusercontent.com/143415/162669450-1b6da5bb-9e58-4cc5-941c-82b565f86b1b.png)
 
@@ -96,10 +97,10 @@ You're now connected to your NPK installation. This can be performed by any user
 You can change the settings of an install without losing your existing campaigns. Use the instructions above to connect to your NPK installation, then edit `npk-settings.json` as necessary and run `npm run update`. It's that easy!
 
 ```sh
-cloudshell-user$ source <(curl https://code.fiendishdrwu.com/npk/cloudshell_install.sh)
-@c6fc/npk> vim npk-settings.json
+~ $ source <(curl https://code.fiendishdrwu.com/npk/cloudshell_install.sh)
+@FiendishDrWu/npk> vim npk-settings.json
 < ... change your settings however you need >
-@c6fc/npk> npm run update
+@FiendishDrWu/npk> npm run update
 ```
 
 ## Uploading your own dictionaries and rule files
@@ -113,8 +114,8 @@ Once NPK has been deployed, administrative users can use the NPK console to uplo
 You can completely turn down NPK and delete all of its data from AWS very easily. Just attach your CloudShell to NPK, then run `npm run destroy`:
 
 ```sh
-cloudshell-user$ source <(curl https://code.fiendishdrwu.com/npk/cloudshell_install.sh)
-@c6fc/npk> npm run destroy
+~ $ source <(curl https://code.fiendishdrwu.com/npk/cloudshell_install.sh)
+@FiendishDrWu/npk> npm run destroy
 ```
 
 # Official Discord Channel
