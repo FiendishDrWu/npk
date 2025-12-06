@@ -8,6 +8,7 @@ Changes from the source repo:
 - wordlist compression pipeline fixes
 - added A100 benchmarks
 - moved images to docs/img directory
+- added opt-in region support
 
 ![dashboard_progress](docs/img/dashboard_progress.png)
 
